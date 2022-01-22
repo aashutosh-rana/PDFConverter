@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgPdfIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pdf_icon"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/txtPdfTopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgPdfIcon"
+            android:text="pdf name"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:maxLength="25"
+            android:textColor="@android:color/black"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Horizontal reading mode"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_align_horizontal_left_24"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtVertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Vertical reading mode"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_align_vertical_top_24"
+                android:padding="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtNightMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Night mode"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_nights_stay_24"
+                android:padding="10dp"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchNightMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtGoToPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Go to page"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_kitesurfing_24"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Share"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_share_24"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtAddStarred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Add to starred"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_star_outline_24"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtAddPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Add Password"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_lock_24"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/txtMakeCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Make a copy"
+                android:textSize="14sp"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/ic_baseline_content_copy_24"
+                android:padding="10dp"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
